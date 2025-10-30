@@ -136,6 +136,24 @@ a {
     font-size: 13px;
 }
 
+.line-2-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.line-2 {
+    display: block;
+    overflow: hidden;
+    max-height: 3em;
+    transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateZ(0);
+    line-height: 1.5em;
+}
+
+.category-item:hover .line-2 {
+    max-height: 350px;
+    /* Максимальная высота, больше чем нужно */
+}
 
 /* bootstrap styles custom */
 .dropdown-toggle::after {
@@ -369,7 +387,8 @@ footer {
 
 .dropdown-menu img,
 .dropdown-menu span,
-.category-item-card img {
+.category-item-card img,
+.category-item a {
     transition: all 0.3s ease;
 }
 
@@ -386,7 +405,8 @@ footer {
     text-decoration: underline;
 }
 
-.category-item-card:hover h6 {
+.category-item-card:hover h6,
+.category-item:hover a {
     color: #008ABD;
 }
 
@@ -398,6 +418,21 @@ footer {
     left: 0;
     z-index: 3;
 }
+
+.basket-btn {
+    border: 1px solid #005371;
+    color: #005371 !important;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    padding: 5px 8px;
+}
+
+.basket-btn:hover {
+    background: #005371;
+    color: white !important;
+    transform: translateY(-4px);
+}
+
 
 /* breackpoints media requires */
 @media(max-width:990px) {
@@ -459,6 +494,10 @@ footer {
 
     .icon-size-3 {
         height: 35px;
+    }
+
+    .line-2 {
+        max-height: unset;
     }
 }
 
