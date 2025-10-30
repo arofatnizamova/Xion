@@ -28,6 +28,10 @@ a {
     background: #BFE2EE;
 }
 
+.bg-clear {
+    background: #F8F8F8;
+}
+
 .card-shadow {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     transition: 0.3s ease;
@@ -41,6 +45,9 @@ a {
     opacity: 0.8;
 }
 
+.lh-small {
+    line-height: 1.4;
+}
 
 /* UI kit */
 .btn {
@@ -125,16 +132,28 @@ a {
     font-size: 14px;
 }
 
+.fs-3xs {
+    font-size: 13px;
+}
+
 
 /* bootstrap styles custom */
+.dropdown-toggle::after {
+    display: none;
+}
+
 .nav-link {
     color: white;
     font-weight: 400;
+    border-radius: 15px;
+    font-size: 15px;
 }
 
-.nav-link:hover {
-    color: white;
-    text-decoration: overline;
+.nav-link:hover,
+.nav-link.active {
+    color: #018ABE !important;
+    border-radius: 15px;
+    background: white;
 }
 
 .navbar-toggler-icon {
@@ -161,6 +180,12 @@ a {
 .form-control::placeholder {
     font-size: 16px;
     color: rgba(41, 41, 43, 0.8);
+}
+
+.breadcrumb-item,
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #005371;
+    font-weight: 300;
 }
 
 /* custom styles */
@@ -259,6 +284,7 @@ a {
 
 footer {
     color: #29292B;
+    border-top: 1px solid #005371;
 }
 
 .footer-logo {
@@ -331,6 +357,48 @@ footer {
     font-size: 80px;
 }
 
+.border-top-white {
+    border-top: 1px solid white;
+}
+
+.dropdown-menu.mega {
+    background: #FAFDFE;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-menu img,
+.dropdown-menu span,
+.category-item-card img {
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover img,
+.category-item-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-item-card img {
+    height: 80px;
+}
+
+.dropdown-menu a:hover span {
+    text-decoration: underline;
+}
+
+.category-item-card:hover h6 {
+    color: #008ABD;
+}
+
+.category-quantity {
+    clip-path: polygon(0 0, 100% 0, 51% 50%, 0% 100%);
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
 /* breackpoints media requires */
 @media(max-width:990px) {
     .p-top-custom {
@@ -364,6 +432,11 @@ footer {
 
     .title-elemented {
         justify-content: center;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 16px;
     }
 }
 
