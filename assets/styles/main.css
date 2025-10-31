@@ -228,7 +228,8 @@ a {
     font-size: 18px;
 }
 
-.form-control::placeholder {
+.form-control::placeholder,
+.payment-input::placeholder {
     font-size: 16px;
     color: rgba(41, 41, 43, 0.8);
 }
@@ -548,6 +549,23 @@ footer {
     width: 50%;
 }
 
+.payment-input {
+    background: #F8F8F8;
+    border: none;
+    padding: 10px 20px;
+}
+
+.icon-position {
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.bottom-underline {
+    border-bottom: 2px solid #005371;
+}
+
 /* breackpoints media requires */
 @media(max-width:990px) {
     .p-top-custom {
@@ -628,6 +646,10 @@ footer {
 
     .breadcrumb {
         font-size: 14px !important;
+    }
+
+    .payment-input::placeholder {
+        font-size: 14px;
     }
 }
 
