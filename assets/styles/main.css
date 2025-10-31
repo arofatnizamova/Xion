@@ -57,6 +57,13 @@ a {
     line-height: 1.4;
 }
 
+.text-decoration-dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
 /* UI kit */
 .btn {
     background: transparent;
@@ -108,6 +115,13 @@ a {
 
 .btn-long-unrounded:hover {
     background: #005371;
+}
+
+.btn-overlined {
+    color: #005371;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #005371;
 }
 
 .w-fit-content {
@@ -238,6 +252,25 @@ a {
 .breadcrumb-item+.breadcrumb-item::before {
     color: #005371;
     font-weight: 300;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    color: #7F7F7F;
+    border: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 /* custom styles */
@@ -566,6 +599,37 @@ footer {
     border-bottom: 2px solid #005371;
 }
 
+.price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+    color: #222;
+    margin-bottom: 8px;
+    gap: 8px;
+}
+
+.price-row .label {
+    white-space: nowrap;
+}
+
+.price-row .dots {
+    flex: 1;
+    border-bottom: 1px dotted #999;
+    margin: 0 8px;
+    height: 0.5em;
+}
+
+.price-row .value {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.price-row .free {
+    color: #008bd2;
+    font-weight: 400;
+}
+
 /* breackpoints media requires */
 @media(max-width:990px) {
     .p-top-custom {
@@ -649,6 +713,10 @@ footer {
     }
 
     .payment-input::placeholder {
+        font-size: 14px;
+    }
+
+    .nav-tabs .nav-link {
         font-size: 14px;
     }
 }

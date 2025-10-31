@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header class="bg-dark-blue">
+        <nav class="navbar navbar-expand-lg py-lg-5">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/icons/main/logo.svg" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse bg-dark-blue pb-lg-0 pb-5 navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mx-auto gap-xl-3 mb-sm-0 mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#advantages">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#brand">О бренде</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#" class="btn btn-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="basket.html" class="btn btn-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a href="about.html#contacts" class="btn btn-white">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-3xl">Оформление заказа</h3>
+                <a href="basket.html" class="text-dust">В корзину</a>
+                <div class="row gy-3 mt-lg-4 mt-3">
+                    <div class="col-xl-8 col-12">
+
+                        <p class="mb-2 fw-semibold fs-2xl d-lg-none d-block">Покупатель</p>
+                        <div class="w-100 mb-lg-4 mb-3 border border-1 ">
+                            <div class="d-flex d-sm-none justify-content-end px-2 pt-2">
+                                <button class="bg-transparent border-0 gap-3">
+                                    <i class="fa-solid fa-xmark fs-4 text-corp"></i>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between px-3 py-sm-2 pt-0 pb-2">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <p class="mb-0 fs-xs d-lg-block d-none">Покупатель</p>
+                                    </div>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                                aria-selected="true">Физическое лицо</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                                                aria-selected="false">Юридическое лицо</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="d-sm-flex d-none align-items-center bg-transparent border-0 gap-3">
+                                    <span class="text-dust d-sm-block d-none">Очистить</span>
+                                    <i class="fa-solid fa-xmark fs-4 text-corp"></i>
+                                </button>
+                            </div>
+                            <hr class="my-0">
+                            <div class="px-3 py-2">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                        <form action="">
+                                            <div class="row gy-3 gx-md-5 gx-0">
+                                                <div class="col-md-6">
+                                                    <div class="w-100">
+                                                        <label for="name" class="text-dust mb-1 fs-2xs">Ф.И.О (Фамилия и Имя обязательно) <span class="text-danger">*</span></label>
+                                                        <input id="name" type="text" class="w-100 payment-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="w-100">
+                                                        <label for="email" class="text-dust mb-1 fs-2xs">E-Mail <span class="text-danger">*</span></label>
+                                                        <input id="email" type="email" class="w-100 payment-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="w-100">
+                                                        <label for="tel" class="text-dust mb-1 fs-2xs">Телфон <span class="text-danger">*</span></label>
+                                                        <input id="tel" type="tel" class="w-100 payment-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="w-100">
+                                                        <label for="place" class="text-dust mb-1 fs-2xs">Пункт выдачи СДЭК <span class="text-danger">*</span></label>
+                                                        <input id="place" type="text" class="w-100 payment-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <a href="#" class="btn my-3 py-2 d-block fs-xs w-100 btn-corp">
+                                                        Продолжить
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="fs-xl text-dust fw-semibold mb-2 d-sm-none d-block">Способ доставки</p>
+                        <div class="w-100 p-3 border border-1 mb-lg-4 mb-3">
+
+                            <div class="row gy-3 justify-content-between">
+                                <div class="col-lg-4">
+                                    <div class="w-100 fs-xs">
+                                        <p class="fs-sm mb-1 d-sm-block d-none">Способ доставки</p>
+                                        <p class=" mb-1 fw-bold">Самовывоз</p>
+                                        <p class="d-flex align-items-center mb-1 justify-content-between">
+                                            <span>Город</span>
+                                            <span>Ташкент</span>
+                                        </p>
+                                        <p class="d-flex align-items-center mb-1 justify-content-between">
+                                            <span>Стоимость доставки</span>
+                                            <span>Бесплатно</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="#" class="btn btn-overlined w-100">Изменить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fs-xl text-dust fw-semibold mb-2 d-sm-none d-block">Способ оплаты</p>
+                        <div class="w-100 p-3 border border-1 ">
+                            <div class="row gy-3">
+                                <div class="col-lg-9">
+                                    <div class="w-100">
+                                        <p class="fs-sm mb-1 d-sm-block d-none">Способ оплаты</p>
+                                        <p class="fw-bold fs-xs mb-0">Оплата рнлайн: карты, кошелек и др.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="#" class="btn btn-overlined w-100">Изменить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12">
+                        <div class="w-100 rounded-2 border border-1 p-3">
+                            <div class="d-flex fs-xl fw-semibold align-items-center justify-content-between">
+                                <span>Итого:</span>
+                                <span>$2 750</span>
+                            </div>
+                            <div class="my-3">
+                                <div class="price-row">
+                                    <span class="label">Товаров на:</span>
+                                    <span class="dots"></span>
+                                    <span class="value">$2 750</span>
+                                </div>
+
+                                <div class="price-row">
+                                    <span class="label">НДС (10%, включен в цену):</span>
+                                    <span class="dots"></span>
+                                    <span class="value">$2 750</span>
+                                </div>
+
+                                <div class="price-row">
+                                    <span class="label">Доставка:</span>
+                                    <span class="dots"></span>
+                                    <span class="value free">бесплатно</span>
+                                </div>
+                            </div>
+                            <div class="my-lg-4 my-3 position-relative">
+                                <input type="text" class="w-100 payment-input" placeholder="Есть промокод?">
+                                <i class="bi bi-arrow-right position-absolute fs-4 text-dust icon-position"></i>
+                            </div>
+                            <p class="fs-lg fw-semibold">Сейчас выбрано:</p>
+                            <p class="mb-1 fs-xs">Доставка: <a href="#" class="text-corp text-decoration-dotted">Самовывоз</a></p>
+                            <p class="mb-0 fs-xs">Оплата: <a href="#" class="text-corp text-decoration-dotted">Оплата онлайн карты, кошелёк и др.</a> </p>
+                            <a href="#" class="btn mt-4 d-block fs-xs w-100 btn-corp">
+                                Оформить к заказ
+                            </a>
+
+                        </div>
+                        <p class="fs-3xs mt-3 ps-lg-4 text-lg-start text-center">Нажимая на кнопку, вы соглашаетесь на <a href="#" class="text-decoration-underline text-corp">
+                                обработку персональных данных и с публичной офертой
+                            </a> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="w-100 fs-xs">
+                        <img src="assets/icons/main/logo-footer.svg" alt="" class="footer-logo img-fluid">
+                        <p class="mb-1 fw-bold mt-4">Режим работы</p>
+                        <p>Пн-Пт с 08:00 до 17:00</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="w-100 fs-xs">
+                        <p class="fw-bold fs-sm">Главная</p>
+                        <div class="w-100 d-flex fs-xs justify-content-between flex-lg-row flex-column">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#why" class="footer-link">
+                                        Почему нас выбирают
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="catalog.html" class="footer-link">
+                                        Каталог товаров
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#advantages" class="footer-link">
+                                        Преимущества
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#brand" class="footer-link">
+                                        О бренде
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="about.html" class="footer-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#directions" class="footer-link">
+                                        Основные направления
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="w-100 d-flex justify-content-lg-center">
+                        <div class="w-fit-content">
+                            <p class="w-fit-content fw-bold fs-sm">Наши контакты</p>
+                            <ul class="w-fit-content list-unstyled fs-2xs">
+                                <li class="mb-1">
+                                    <a href="#">
+                                        +998 12 123 45 67
+                                    </a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="#">
+                                        +998 12 123 45 67
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="fw-bold w-fit-content fs-sm">Адрес:</p>
+                            <p class="fs-2xs w-fit-content">Краснодарский край, г. Краснодар, <br>ул. Морская, 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <a href="about.html#contacts" class="btn d-block btn-corp">
+                        Обратная связь
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="text-lg-start text-center fs-xs mb-0">
+                        Все права защищены
+                    </p>
+
+                </div>
+                <div class="col-lg-7">
+                    <a href="#" class=" fs-xs mb-0 text-lg-start text-center d-block text-corp text-decoration-underline">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
