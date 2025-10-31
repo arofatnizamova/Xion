@@ -16,6 +16,14 @@ a {
     color: #29292B;
 }
 
+.text-descr {
+    color: #636363;
+}
+
+.text-dust {
+    color: #7F7F7F;
+}
+
 .bg-corp {
     background: #005371;
 }
@@ -91,6 +99,17 @@ a {
     font-size: 18px;
 }
 
+.btn-long-unrounded {
+    border-radius: 0;
+    padding: 10px 50px;
+    display: block;
+    width: fit-content;
+}
+
+.btn-long-unrounded:hover {
+    background: #005371;
+}
+
 .w-fit-content {
     width: fit-content;
 }
@@ -150,9 +169,23 @@ a {
     line-height: 1.5em;
 }
 
+.line-2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, transparent, #F8F8F8);
+}
+
 .category-item:hover .line-2 {
     max-height: 350px;
     /* Максимальная высота, больше чем нужно */
+}
+
+.category-item:hover .line-2::after {
+    display: none;
 }
 
 /* bootstrap styles custom */
@@ -433,11 +466,96 @@ footer {
     transform: translateY(-4px);
 }
 
+/* Активный слайд миниатюры */
+.swiper-thumbs .swiper-slide {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.swiper-thumbs .swiper-slide img {
+    border-radius: 5px;
+}
+
+.swiper-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+    border: 1px solid #292929;
+}
+
+.number-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #005371;
+    /* тонкая синеватая рамка как на примере */
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    height: 35px;
+}
+
+.number-input input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    -moz-appearance: textfield;
+}
+
+.number-input input::-webkit-outer-spin-button,
+.number-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-input button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    color: #004b6e;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.number-input button:hover {
+    background: #e8f3f9;
+}
+
+.btn-basket i {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.btn-basket:hover i {
+    display: inline;
+}
+
+.btn-basket:hover {
+    color: #004b6e;
+}
+
+.w-btn-length {
+    width: 50%;
+}
 
 /* breackpoints media requires */
 @media(max-width:990px) {
     .p-top-custom {
         padding-top: 50px;
+    }
+
+    .line-2::after {
+        display: none;
     }
 
     .icon-height-2 {
@@ -498,6 +616,18 @@ footer {
 
     .line-2 {
         max-height: unset;
+    }
+
+    .btn-long-unrounded {
+        width: 100%;
+    }
+
+    .w-btn-length {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        font-size: 14px !important;
     }
 }
 

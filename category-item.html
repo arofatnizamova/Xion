@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header class="bg-dark-blue">
+        <nav class="navbar navbar-expand-lg py-lg-5">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/icons/main/logo.svg" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse bg-dark-blue pb-lg-0 pb-5 navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mx-auto gap-xl-3 mb-sm-0 mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#advantages">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-brand">О бренде</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#" class="btn btn-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="basket.html" class="btn btn-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a href="about.html#contacts" class="btn btn-white">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- categoties menu -->
+        <section class="bg-dark-blue d-lg-block d-none pb-4">
+            <div class="container">
+                <div class="border-top-white pt-4">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse" id="navbar-content">
+                            <ul class="navbar-nav mr-auto  mx-auto gap-xxl-5 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="bi bi-grid-3x3-gap-fill me-2"></i>Каталог</a>
+                                    <div class="dropdown-menu mega w-100">
+                                        <div class="mega-content px-4">
+                                            <div class="container">
+                                                <div class="row gy-4">
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/1.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Акушерские пессари</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/2.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Гинекологические пессарии</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/3.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Расходные материалы</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/4.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Внутриматочные спирали</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/5.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Гинекологические инструменты</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/6.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Тренажёры Кегеля</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/7.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Экспресс-тесты</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/8.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Пессарии</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="w-100 h-100">
+                                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                                <img src="assets/icons/mega-menu/9.svg" alt="">
+                                                                <span class="fw-semibold fs-sm">Интимная косметика</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="#">Акушерские пессарии</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="#">Гинекологические пессарии</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="#">Расходные материалы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="#">Акушерство</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Акушерские пессарии для беременных</li>
+                    </ol>
+                </nav>
+                <h3 class="fs-3xl  mt-lg-5 mt-4 mb-lg-4 mb-3">Пессарий силиконовый</h3>
+                <div class="product-wrapper bg-clear border border-1 p-lg-5 p-3">
+                    <div class="row gx-lg-5 gx-0 gy-4">
+                        <div class="col-lg-6">
+                            <div class="w-100 h-100">
+                                <div class="swiper swiper-main">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid rounded-1" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid rounded-1" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid rounded-1" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid rounded-1" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid rounded-1" alt=""></div>
+                                    </div>
+                                </div>
+
+                                <!-- Слайдер миниатюр -->
+                                <div class="swiper swiper-thumbs mt-4">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid" alt=""></div>
+                                        <div class="swiper-slide"><img src="assets/images/catalog-page/product.png" class="img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="w-100 h-100">
+                                <h5 class="fs-lg">Пессарий силиконовый цервикальный (акушерский) перфорированный Симург</h5>
+                                <p class="fs-xs text-dust lh-small my-lg-4 my-3">Пессарий акушерский силиконовый цервикальный перфорированный предназначен для профилактики и коррекции
+                                    истмико-цервикальной
+                                    недостаточности
+                                    (ИЦН) и сохранения
+                                    беременности до срока родов.</p>
+                                <a href="#" class="btn btn-white btn-long-unrounded">Подробности</a>
+                                <hr>
+                                <p class="text-dust fs-xs mb-1">Цена:</p>
+                                <p class="fw-bold fs-lg">$2 750</p>
+                                <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                        <div class="number-input">
+                                            <button class="minus">−</button>
+                                            <input type="number" value="1" min="1" max="99">
+                                            <button class="plus">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <button class="btn d-block btn-corp btn-basket w-100">
+                                            <i class="fa-solid fa-cart-shopping text-corp me-2"></i>
+                                            В корзину
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-1 mt-4 p-lg-4 p-3">
+                                    <h5 class="fs-lg">Пессарий силиконовый цервикальный (акушерский) перфорированный Симург</h5>
+                                    <p class="fs-xs text-dust lh-small my-lg-4 my-3">Пессарий акушерский силиконовый цервикальный перфорированный предназначен для профилактики и коррекции
+                                        истмико-цервикальной
+                                        недостаточности
+                                        (ИЦН) и сохранения
+                                        беременности до срока родов.</p>
+                                    <a href="#" class="btn btn-corp w-btn-length">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-lg-5 pb-3">
+            <div class="container">
+                <h5 class="fs-2xl fw-semibold mb-lg-4 mb-3">Описание</h5>
+                <div class="text-descr fs-xs">
+                    <p>Акушерский пессарий dr. Arabin ASQ предназначен для поддержания шейки матки во время беременности у пациенток с истмико-цервикальной недостаточностью, высоким внутриматочным
+                        давлением, а также при
+                        угрозе выкидыша из-за физических нагрузок или многоплодной беременности.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa-solid fa-check text-info me-2"></i>Сделан из гибкого полупрозрачного силикона.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check text-info me-2"></i>Легко сгибается и обеспечивает безболезненную установку.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check text-info me-2"></i>Не вызывает аллергических реакций и абсолютно безопасен для здоровья.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check text-info me-2"></i>Перфорированные стенки способствуют беспрепятственному оттоку влагалищных выделений.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check text-info me-2"></i>Сделан в Германии.
+                        </li>
+                    </ul>
+                    <p>
+                        Для покупки пессария нужно знать три размера, которые определяет врач: наружный диаметр - 65 или 70 мм, высоту чаши - от 17 до 30 мм и диаметр внутреннего отверстия - 32 или 35
+                        мм. Последний параметр
+                        не обладает большой значимостью.
+                        Перед установкой должны быть выполнены бактериальные мазки. Если пессарий используется в терапевтическом лечении, показанием к его использованию является ситуация, когда
+                        трансвагинальная сонография
+                        указывает на цервикальное укорочение и/или расширение внутреннего зева, обычно в период между 15 и 20 неделями. Пессарий закрывает шейку матки и, что более важно - поддерживает
+                        ее и перемещает шейку в
+                        сторону крестца.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="w-100 fs-xs">
+                        <img src="assets/icons/main/logo-footer.svg" alt="" class="footer-logo img-fluid">
+                        <p class="mb-1 fw-bold mt-4">Режим работы</p>
+                        <p>Пн-Пт с 08:00 до 17:00</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="w-100 fs-xs">
+                        <p class="fw-bold fs-sm">Главная</p>
+                        <div class="w-100 d-flex fs-xs justify-content-between flex-lg-row flex-column">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#why" class="footer-link">
+                                        Почему нас выбирают
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="catalog.html" class="footer-link">
+                                        Каталог товаров
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#advantages" class="footer-link">
+                                        Преимущества
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#brand" class="footer-link">
+                                        О бренде
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="about.html" class="footer-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="mb-lg-1 mb-2">
+                                    <a href="index.html#directions" class="footer-link">
+                                        Основные направления
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="w-100 d-flex justify-content-lg-center">
+                        <div class="w-fit-content">
+                            <p class="w-fit-content fw-bold fs-sm">Наши контакты</p>
+                            <ul class="w-fit-content list-unstyled fs-2xs">
+                                <li class="mb-1">
+                                    <a href="#">
+                                        +998 12 123 45 67
+                                    </a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="#">
+                                        +998 12 123 45 67
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="fw-bold w-fit-content fs-sm">Адрес:</p>
+                            <p class="fs-2xs w-fit-content">Краснодарский край, г. Краснодар, <br>ул. Морская, 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <a href="about.html#contacts" class="btn d-block btn-corp">
+                        Обратная связь
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="text-lg-start text-center fs-xs mb-0">
+                        Все права защищены
+                    </p>
+
+                </div>
+                <div class="col-lg-7">
+                    <a href="#" class=" fs-xs mb-0 text-lg-start text-center d-block text-corp text-decoration-underline">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
