@@ -8,12 +8,20 @@ a {
     text-decoration: none;
 }
 
+.ff-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
 .text-corp {
     color: #005371;
 }
 
 .text-dirt {
     color: #29292B;
+}
+
+.text-blue {
+    color: #018ABE;
 }
 
 .text-descr {
@@ -73,12 +81,13 @@ a {
 .btn-corp {
     font-size: 16px;
     color: white;
-    background: #005371;
+    background: #018ABE;
     border-radius: 3px;
+    min-width: 200px;
 }
 
 .btn-corp:hover {
-    outline: 1px solid #005371;
+    outline: 1px solid #018ABE;
 }
 
 .btm-corp-sm {
@@ -129,6 +138,10 @@ a {
 }
 
 /*  typography  */
+.fs-5xl {
+    font-size: clamp(1.875rem, 1.4375rem + 2.1875vw, 4.0625rem);
+}
+
 .fs-4xl {
     font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
@@ -174,6 +187,22 @@ a {
     overflow: hidden;
 }
 
+.clamp-6 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    /* обрезает до 6 строк в WebKit */
+    overflow: hidden;
+}
+
+/* То же для 3 строк */
+.clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 .line-2 {
     display: block;
     overflow: hidden;
@@ -200,6 +229,25 @@ a {
 
 .category-item:hover .line-2::after {
     display: none;
+}
+
+.text-balance {
+    text-wrap: balance;
+}
+
+.promo {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-hover-underline {
+    transition: all 0.3s ease;
+}
+
+.link-hover-underline:hover {
+    text-decoration: underline !important;
 }
 
 /* bootstrap styles custom */
@@ -284,12 +332,9 @@ a {
 
 
 .main-header {
-    position: fixed;
+
     background: #018ABE;
-    z-index: 100;
-    top: 0;
-    width: 100%;
-    left: 0;
+
 }
 
 .p-top-custom {
@@ -369,7 +414,7 @@ a {
 
 footer {
     color: #29292B;
-    border-top: 1px solid #005371;
+    background: #018ABE;
 }
 
 .footer-logo {
@@ -628,6 +673,21 @@ footer {
 .price-row .free {
     color: #008bd2;
     font-weight: 400;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    /* если внутри баннера что-то прокручивается, учтите это отдельно */
+}
+
+/* Обычные секции — любые высоты */
+
+
+/* Плавный скролл по документу */
+html {
+    scroll-behavior: smooth;
 }
 
 /* breackpoints media requires */
